@@ -10,24 +10,13 @@
     <table>
       <form id="form_password">
         <tr>
-          <td><input type="text" id="password" value="" /></td>
-          <td><button type="button" id="copy">Copy</button></td>
+          <td><input type="text" id="password" value="" /><button type="button" id="copy">Copy</button></td>
         </tr>
         <tr>
           <td><button type="button" id="generate">Generate</button></td>
         </tr>
         <tr>
           <td>Password length:<input type="text" id="length" value="16" /></td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" id="number" checked="checked" />Number(0-9)
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <input type="checkbox" id="symbol" checked="checked" />Symbols(!#$%&=~/*-+)
-          </td>
         </tr>
         <tr>
           <td>
@@ -38,6 +27,16 @@
           <td>
             <input type="checkbox" id="upper_character" checked="checked" />Uppercase characters(A-Z)
           </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="number" checked="checked" />Number(0-9)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="symbol" checked="checked" />Symbols
+            <input type="text" id="symbol_val" value="!#$%&=~/*-+" /></td>
         </tr>
       </form>
     </table>
