@@ -1,14 +1,23 @@
+window.addEventListener('DOMContentLoaded', function(){
+  document.getElementById("generate").innerHTML  = chrome.i18n.getMessage("generate");
+  document.getElementById("label_length").innerHTML  = chrome.i18n.getMessage("label_length");
+  document.getElementById("label_lowercase").innerHTML  = chrome.i18n.getMessage("label_lowercase");
+  document.getElementById("label_uppercase").innerHTML  = chrome.i18n.getMessage("label_uppercase");
+  document.getElementById("label_number").innerHTML  = chrome.i18n.getMessage("label_number");
+  document.getElementById("label_symbols").innerHTML  = chrome.i18n.getMessage("label_symbols");
+});
+
 document.addEventListener("DOMContentLoaded", function () {
-  var entryElement = document.getElementById("copy");
+  let entryElement = document.getElementById("copy");
   entryElement.addEventListener("click", function () {
     copyToClipboard();
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var entryElement = document.getElementById("generate");
+  let entryElement = document.getElementById("generate");
   entryElement.addEventListener("click", function () {
-    var password_form = document.getElementById("password");
+    let password_form = document.getElementById("password");
     password_form.value = getRandomStr(document.forms.form_password);
   });
 });

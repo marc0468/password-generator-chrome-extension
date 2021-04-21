@@ -1,0 +1,26 @@
+{
+  "name": {
+    "message": "Simple Password generator"
+  },
+  "description": {
+    "message": "Generate a password with just one click."
+  },
+  "generate": {
+    "message": "Generate"
+  },
+  "label_length": {
+    "message": "Password length:"
+  },  
+  "label_lowercase": {
+    "message": "Lowercase characters"
+  },
+  "label_uppercase": {
+    "message": "Uppercase characters"
+  },
+  "label_number": {
+    "message": "Number"
+  },
+  "label_symbols": {
+    "message": "Symbols"
+  }
+}

@@ -1,8 +1,9 @@
 {
-  "name": "Password generator",
-  "version": "0.2.0",
+  "name": "__MSG_name__",
+  "version": "0.3.0",
   "manifest_version": 2,
-  "description": "Generate a password with just one click.",
+  "default_locale": "en",
+  "description": "__MSG_description__",
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
