@@ -18,18 +18,19 @@ function getRandomStr(option) {
   let SOURCE = "";
   let result = "";
 
-  if (option["number"].checked) {
-    SOURCE += "0123456789";
-  }
-  if (option["symbol"].checked) {
-    SOURCE += "!#$%&=~/*-+";
-  }
   if (option["low_character"].checked) {
     SOURCE += "abcdefghijklmnopqrstuvwxyz";
   }
   if (option["upper_character"].checked) {
     SOURCE += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
+  if (option["number"].checked) {
+    SOURCE += "0123456789";
+  }
+  if (option["symbol"].checked) {
+    SOURCE += option["symbol_val"].value;
+  }
+
   for (var i = 0; i < PASSWORD_LEN; i++) {
     result += SOURCE[Math.floor(Math.random() * SOURCE.length)];
   }
