@@ -40,7 +40,7 @@ function getRandomStr(option) {
     SOURCE += option["symbol_val"].value;
   }
 
-  for (var i = 0; i < PASSWORD_LEN; i++) {
+  for (let i = 0; i < PASSWORD_LEN; i++) {
     result += SOURCE[Math.floor(Math.random() * SOURCE.length)];
   }
 
@@ -48,7 +48,7 @@ function getRandomStr(option) {
 }
 
 function copyToClipboard() {
-  var password = document.getElementById("password");
+  let password = document.getElementById("password");
   password.select();
   document.execCommand("Copy");
 }
