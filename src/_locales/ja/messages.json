@@ -1,0 +1,26 @@
+{
+  "name": {
+    "message": "Simple Password generator"
+  },
+  "description": {
+      "message": "パスワードをワンクリックで生成するツールです。"
+  },
+  "generate": {
+    "message": "生成"
+  },
+  "label_length": {
+    "message": "文字数:"
+  },  
+  "label_lowercase": {
+    "message": "小文字"
+  },
+  "label_uppercase": {
+    "message": "大文字"
+  },
+  "label_number": {
+    "message": "数字"
+  },
+  "label_symbols": {
+    "message": "記号"
+  }
+}
